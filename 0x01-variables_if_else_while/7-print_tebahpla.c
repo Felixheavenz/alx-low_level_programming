@@ -1,4 +1,4 @@
- /**
+/**
  *main - initiates the program
  *
  *Description: conditional statement
