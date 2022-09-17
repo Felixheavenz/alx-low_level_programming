@@ -1,33 +1,18 @@
-/**
- *make - initiates the program
- *
- *Description: conditional statement
- *Return: Always 0 (success)
- **/
-
 #include <stdio.h>
-
-#include <stdlib.h>
-
-#include <time.h>
-
+/**
+ * main - print if the number is positive, zero, or negative
+ *
+ * Description: using the main function
+ * this program prints "programming is positive, zero, or negative
+ * Return: 0
+ */
 int main(void)
 {
-
-	int a;
-
-	/* your code goes there */
-
-	for (a = 0; a < 10; a++)
-
-	{
-
-		printf("%d", a);
-
-	}
-
-	printf("\n");
-
-	return (0);
-
+int i;
+for (i = 0; i < 10; i++)
+{
+	printf("%i", i);
+}
+printf("\n");
+return (0);
 }
