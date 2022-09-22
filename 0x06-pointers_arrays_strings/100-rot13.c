@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * rot13 - encodes a string using rot13
- * @str:the string targeted
- *Return: returns the encoded string
- */
+* rot13 - encodes a string using rot13
+* @str:the string targeted
+*Return: returns the encoded string
+*/
 
 char *rot13(char *str)
 {
@@ -23,7 +23,7 @@ char *rot13(char *str)
 									'T', 'U', 'V', 'W', 'X', 'Y',
 									'Z', 'A', 'B', 'C', 'D', 'E',
 									'F', 'G', 'H', 'I', 'J', 'K',
-									'L', 'M', 'm', 'o', 'p', 'q',
+									'L', 'M', 'n', 'o', 'p', 'q',
 									'r', 's', 't', 'u', 'v', 'w',
 									'x', 'y', 'z', 'a', 'b', 'c',
 									'd', 'e', 'f', 'g', 'h', 'i',
