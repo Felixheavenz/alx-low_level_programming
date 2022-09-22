@@ -8,7 +8,7 @@
 * Each line shows the hexadecimal content (2 char) of the buffer,
 * 2 bytes at a time, seperated by a space.
 * Each line shows the content of the buffer.
-* prints the byte if it is printable; if not, prints ','.
+* prints the byte if it is printable; if not, prints '.'.
 * Each line ends with a new line '\n'.
 * If the inputted byte size is 0 or less, the function only prints a new line.
 *@b: number of bytes
@@ -28,7 +28,7 @@ void print_buffer(char *b, int size)
 	{
 		if (i % 10 == 0)
 			printf("%08x: ", i);
-		for (j = i; j < + 9; j += 2)
+		for (j = i; j < i + 9; j += 2)
 		{
 			if ((j < size) && ((j + 1) < size))
 				printf("%02x%02x: ", b[j], b[j + 1]);
