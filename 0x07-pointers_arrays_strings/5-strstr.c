@@ -2,10 +2,10 @@
 
 /**
  * _strstr - locates a substring
- * @hatstack: string in which to check for needle
- * @needle: substring to fint hatstack
+ * @haystack: string in which to check for needle
+ * @needle: substring to find haystack
  *
- * Return: pointer to beginning of needle in hatstack or NULL if no match
+ * Return: pointer to beginning of needle in haystack or NULL if no match
  */
 char *_strstr(char *haystack, char *needle)
 {
