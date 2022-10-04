@@ -3,7 +3,7 @@
 /**
 * free_grid - frees a 2d array
 *@grid:memory block to be freed
-*@height of the array
+*@height:height of the array
 *Return:returns void
 */
 
