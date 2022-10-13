@@ -25,7 +25,7 @@ void print_s(va_list s)
 
 	if (str == NULL)
 		str = "(nil)";
-		printf("%s", str);
+	printf("%s", str);
 }
 
 /**
@@ -69,3 +69,24 @@ void print_all(const char * const format, ...)
 	va_list valist;
 	char *separator = "";
 
+	va_start(vallist, format);
+	i = 0;
+	while (format && format[i])
+	{
+		j = 0;
+		while (p[j].t != NULL)
+		{
+			if (*(p[j].t) == format[i])
+			{
+				printf("%s", separator);
+				p[j].f(valist);
+				separator = ", ";
+				break;
+			}
+			j++;
+		}
+		i++;
+	}
+	va_end(valist);
+	printf("\n");
+}	
